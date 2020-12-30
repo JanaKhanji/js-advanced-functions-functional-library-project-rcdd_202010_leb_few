@@ -147,7 +147,7 @@ const fi = (function() {
          else {
         const modifiedVals = new Set()
         const uniqVals = new Set()
-        for (let val of collection) {
+        for (let val of arr) {
           const moddedVal = iteratee(val)
           if (!modifiedVals.has(moddedVal)) {
             modifiedVals.add(moddedVal)
