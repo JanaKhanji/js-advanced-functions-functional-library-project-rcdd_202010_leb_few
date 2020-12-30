@@ -144,9 +144,18 @@ const fi = (function() {
           }
          }
         }
-        else{
-          
+         else {
+        const modifiedVals = new Set()
+        const uniqVals = new Set()
+        for (let val of collection) {
+          const moddedVal = iteratee(val)
+          if (!modifiedVals.has(moddedVal)) {
+            modifiedVals.add(moddedVal)
+            uniqVals.add(val)
+          }
         }
+        return Array.from(uniqVals)
+      }
         return newArr
     }
   }
