@@ -138,8 +138,11 @@ const fi = (function() {
         let newArr=[];
         newArr.push(arr[0]);
         for (const element of arr){
-          if()
+          if(!newArr.find(el => el== element)){
+            newArr.push(element);
+          }
         }
+        return newArr
     }
   }
 })()
