@@ -135,7 +135,11 @@ const fi = (function() {
   return newArr
 },
     uniq:function(arr, sorted){
-        
+        let newArr=[];
+        newArr.push(arr[0]);
+        for (const element of arr){
+          if()
+        }
     }
   }
 })()
