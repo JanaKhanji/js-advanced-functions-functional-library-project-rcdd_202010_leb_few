@@ -135,9 +135,9 @@ const fi = (function() {
   return newArr
 },
     uniq:function(arr, sorted, iteratee=false){
+      let newArr=[];
+      newArr.push(arr[0]);
       if(!iteratee){
-        let newArr=[];
-        newArr.push(arr[0]);
         for (const element of arr){
           if(!newArr.find(el => el== element)){
             newArr.push(element);
